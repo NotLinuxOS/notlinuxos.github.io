@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures the body takes up the full height of the viewport */
+}
 
+body {
+    /* Changed from background-image to a solid dark orange background */
+    background-color: #FFFFF  ; 
+    
+    /* Flexbox to center the container vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center container */
+.container {
+    text-align: center;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.dropbtn {
+    background-color: #FFA500  ;
+    color: white;
+    padding: 18px 35px;
+    font-family: sans-serif;
+    font-size: 24px;
+    border: 3px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none; /* Removes underline from the link */
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222;
+    min-width: 220px;
+    border: 3px solid black;
+    border-radius: 25px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 18px 25px;
+    font-family: "PUSAB", sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Logo */
+.logo {
+    display: block;
+    margin: 0 auto 20px auto; /* Centered with a 20px gap below it */
+    max-width: 100%; /* Ensures responsiveness */
+    height: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <img class="logo" src="yhttps://cdn.discordapp.com/attachments/1414725493822849084/1526786231873175605/gloop-logo-boot.png?ex=6a5849fb&is=6a56f87b&hm=bc3580ad43e9db40d146375b61273e39d5b246477bf8e8cdbeb4abde96a816b5" alt="Gloop OS">
+    <p>website and OS by DoodleForce</p>
+    <a href="https://drive.google.com/file/d/1vy_pzgUl5bpgEv1vbG1N6sYfXJ8hpNHS/view?usp=drive_link" style="text-decoration: none;">
+        <button class="dropbtn">Download Not Linux</button>
+    </a>
+</div>
+
+</body>
+</html>
